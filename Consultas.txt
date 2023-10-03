@@ -1,0 +1,25 @@
+contexto
+
+2. en el app.js agregue el codigo que esta debajo de la dirección
+
+C:\Users\diego\OneDrive\digitalHouse\DH\cursoPropagacionPlantas\src\app.js
+
+const express = require("express");
+const path = require("path");
+const app = express();
+const routerHome = require('./routes/homeRoutes/homeRoutes');
+
+
+app.use(express.static("public"));
+app.set("views", path.join(__dirname, "views"));
+app.set('view engine', 'ejs');
+
+app.use("/", routerHome)
+
+app.listen(3000, ()=>{
+    console.log("servidor activo en el puerto 3000");
+});
+
+
+tu como experto en programación 
+
