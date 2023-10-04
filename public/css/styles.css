@@ -1,0 +1,42 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: #8db600;
+    padding: 1px;
+    border-radius: 3px;
+    
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.tresBotones{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#botonesBarNav{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    font-size: small;
+    padding-top: 4px;
+}
+
+.titulo{
+    color: #255000;
+
+}
+
+footer{
+    background: #ffff8b;
+}
+
+.iconosRedes{
+    text-align: center;
+}
