@@ -10,6 +10,8 @@ app.set('view engine', 'ejs');
 
 app.use("/", routerHome);
 app.use("/introduccion", routerHome);
+app.use("/objetivos", routerHome);
+app.use("/objetivosE", routerHome);
 
 app.listen(3000, ()=>{
     console.log("servidor activo en el puerto 3000");
