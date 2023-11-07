@@ -11,5 +11,28 @@ module.exports = {
     objetivosE: (req, res) => {
         res.render('./home/objetivosE')
     },
-
+    unidad1: (req, res) => {
+        res.render('./home/unidadUno')
+    },
+    diap8: (req, res) => {
+        res.render('./home/diaOcho')
+    },
+    diap9: (req, res) => {
+        res.render('./home/diaNueve')
+    },
+    diap10: (req, res) => {
+        res.render('./home/diaDiez')
+    },
+    diap11: (req, res) => {
+        res.render('./home/diaOnce')
+    },
+    diap12: (req, res) => {
+        res.render('./home/diaDoce')
+    },
+    diap13: (req, res) => {
+        res.render('./home/diaTrece')
+    },
+    diap14: (req, res) => {
+        res.render('./home/diaCatorce')
+    },
 }

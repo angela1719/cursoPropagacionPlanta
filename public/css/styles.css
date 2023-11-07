@@ -1,6 +1,15 @@
 body{
     font-family:Arial, Helvetica, sans-serif;
 }
+
+h2{
+    font-size: 15px;
+}
+
+p{
+    font-size: 10px ;
+
+}
 nav{
     background-color: #8db600;
     padding: 1px;
@@ -34,9 +43,40 @@ nav{
 }
 
 footer{
-    background: #ffff8b;
+    background: #8db600;
 }
 
 .iconosRedes{
     text-align: center;
+}
+
+.cuadro {
+    margin-left: 50px;
+    border-style: solid;
+    
+}
+
+#imagenArrastrar {
+    width: 70px;
+    position: absolute;
+   
+}
+
+#imagenArrastrar2 {
+    width: 70px;
+    position: absolute;
+   
+}
+
+#parrafoArrastre {
+    cursor: grab; /* Cambia el cursor al icono de agarre al pasar el ratón sobre el párrafo */
+    user-select: none; /* Evita la selección de texto al arrastrar */
+    width: 200px;
+    position: absolute;
+}
+
+.catorce{
+    display: flex;
+    justify-content: space-around;
+
 }
