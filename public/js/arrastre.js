@@ -29,7 +29,6 @@ document.addEventListener("mouseup", function() {
 
 // imagen2 que se va a arrastrar
 let dragElement2 = document.getElementById("imagenArrastrar2");
-
 let isDragging2 = false;
 let offsetX2;
 let offsetY2;
@@ -50,8 +49,19 @@ document.addEventListener("mousemove", function(event) {
 
 document.addEventListener("mouseup", function() {
   isDragging2 = false;
-});
 
+  // Comprobar si la imagen se soltó en el cuadroA
+  let cuadroA = document.querySelector(".cuadroA");
+  if (
+    event.clientX > cuadroA.getBoundingClientRect().left &&
+    event.clientX < cuadroA.getBoundingClientRect().right &&
+    event.clientY > cuadroA.getBoundingClientRect().top &&
+    event.clientY < cuadroA.getBoundingClientRect().bottom
+  ) {
+    // Si la imagen se soltó en el cuadroA, muestra una ventana emergente
+    alert("¡Lo lograste!");
+  }
+});
 
 // Párrafo para arrastrar
 let dragParrafo = document.getElementById("parrafoArrastre");
@@ -78,9 +88,3 @@ document.addEventListener("mousemove", function(event) {
 document.addEventListener("mouseup", function() {
   isDraggingDos = false;
 });
-
-
-
-
-
-

@@ -1,82 +1,92 @@
-body{
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-h2{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h2 {
     font-size: 15px;
-}
-
-p{
-    font-size: 10px ;
-
-}
-nav{
+  }
+  
+  p {
+    font-size: 10px;
+  }
+  
+  nav {
     background-color: #8db600;
     padding: 1px;
     border-radius: 3px;
-    
-}
-
-.botones{
+  }
+  
+  .botones {
     display: flex;
     justify-content: space-between;
-    
-}
-
-.tresBotones{
+  }
+  
+  .tresBotones {
     display: flex;
     justify-content: flex-end;
-    
-}
-#botonesBarNav{
+  }
+  
+  #botonesBarNav {
     display: flex;
     width: 15px;
     height: 15px;
     border-radius: 100%;
     font-size: small;
     padding-top: 4px;
-}
-
-.titulo{
+  }
+  
+  .titulo {
     color: #255000;
-
-}
-
-footer{
+  }
+  
+  footer {
     background: #8db600;
-}
-
-.iconosRedes{
+  }
+  
+  .iconosRedes {
     text-align: center;
-}
-
-.cuadro {
+  }
+  
+  .cuadro {
     margin-left: 50px;
     border-style: solid;
-    
-}
-
-#imagenArrastrar {
+  }
+  
+  #imagenArrastrar {
     width: 70px;
     position: absolute;
-   
-}
-
-#imagenArrastrar2 {
+  }
+  
+  #imagenArrastrar2 {
     width: 70px;
     position: absolute;
-   
-}
-
-#parrafoArrastre {
-    cursor: grab; /* Cambia el cursor al icono de agarre al pasar el ratón sobre el párrafo */
-    user-select: none; /* Evita la selección de texto al arrastrar */
+  }
+  
+  #parrafoArrastre {
+    cursor: grab;
+    user-select: none;
     width: 200px;
     position: absolute;
-}
-
-.catorce{
+  }
+  
+  .catorce {
     display: flex;
     justify-content: space-around;
-
+  }
+  
+  #cuadroArrastre {
+    height: 200px;
+  }
+  
+  .cuadroA {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    color: #8db600;
+    background-color: rgba(141, 182, 0, 0.5); /* Cambia el último valor (0.5) según el nivel de transparencia deseado */
 }
+
+  
