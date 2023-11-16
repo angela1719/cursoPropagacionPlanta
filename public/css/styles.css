@@ -1,92 +1,127 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  h2 {
-    font-size: 15px;
-  }
-  
-  p {
-    font-size: 10px;
-  }
-  
-  nav {
-    background-color: #8db600;
-    padding: 1px;
-    border-radius: 3px;
-  }
-  
-  .botones {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .tresBotones {
-    display: flex;
-    justify-content: flex-end;
-  }
-  
-  #botonesBarNav {
-    display: flex;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    font-size: small;
-    padding-top: 4px;
-  }
-  
-  .titulo {
-    color: #255000;
-  }
-  
-  footer {
-    background: #8db600;
-  }
-  
-  .iconosRedes {
-    text-align: center;
-  }
-  
-  .cuadro {
-    margin-left: 50px;
-    border-style: solid;
-  }
-  
-  #imagenArrastrar {
-    width: 70px;
-    position: absolute;
-  }
-  
-  #imagenArrastrar2 {
-    width: 70px;
-    position: absolute;
-  }
-  
-  #parrafoArrastre {
-    cursor: grab;
-    user-select: none;
-    width: 200px;
-    position: absolute;
-  }
-  
-  .catorce {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  #cuadroArrastre {
-    height: 200px;
-  }
-  
-  .cuadroA {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70px;
-    height: 70px;
-    color: #8db600;
-    background-color: rgba(141, 182, 0, 0.5); /* Cambia el último valor (0.5) según el nivel de transparencia deseado */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-  
+h2 {
+  font-size: 15px;
+}
+
+p {
+  font-size: 9px;
+}
+
+nav {
+  background-color: #8db600;
+  padding: 1px;
+  border-radius: 3px;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tresBotones {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#botonesBarNav {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  font-size: small;
+  padding-top: 4px;
+}
+
+.titulo {
+  color: #255000;
+}
+
+footer {
+  background: #8db600;
+}
+
+.iconosRedes {
+  text-align: center;
+}
+
+.cuadro {
+  margin-left: 50px;
+  border-style: solid;
+}
+
+#imagenArrastrar {
+  width: 70px;
+  position: absolute;
+}
+
+#imagenArrastrar2 {
+  width: 70px;
+  position: absolute;
+}
+
+#parrafoArrastre {
+  cursor: grab;
+  user-select: none;
+  width: 200px;
+  position: absolute;
+}
+
+.catorce {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cuadroArrastre {
+  height: 200px;
+}
+
+.cuadroA {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  color: #8db600;
+  background-color: rgba(141, 182, 0, 0.5); /* Cambia el último valor (0.5) según el nivel de transparencia deseado */
+}
+.apareamiento{
+display: flex;
+justify-content: space-around;
+}
+
+.contenedor {
+display: flex;
+flex-direction: column;
+
+}
+
+.caja {
+width: 43px;
+height: 12px;
+border: 1px solid #000;
+margin: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.cajaPalabra {
+background-color: #66c2ff;
+}
+
+.nota{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px;
+width: 400px;
+height: 20px;
+border: 1px solid red;
+color: red;
+font-weight: bolder;
+
+}
