@@ -1,4 +1,5 @@
 console.log("¡Mi JavaScript está vinculado correctamente!");
+window.addEventListener('load', () => {
 
 // imagen1 que se va a arrastrar
 let dragElement = document.getElementById("imagenArrastrar");
@@ -88,3 +89,4 @@ document.addEventListener("mousemove", function(event) {
 document.addEventListener("mouseup", function() {
   isDraggingDos = false;
 });
+})

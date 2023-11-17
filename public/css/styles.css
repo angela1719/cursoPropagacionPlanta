@@ -111,7 +111,35 @@ align-items: center;
 
 .cajaPalabra {
 background-color: #66c2ff;
+position: absolute;
+transition: opacity 0.3s ease;
 }
+
+.cajaPalabra:nth-child(1) {
+  top: 87px;
+  left: 50px;
+}
+
+.cajaPalabra:nth-child(2) {
+  top: 87px;
+  left: 150px;
+}
+
+.cajaPalabra:nth-child(3) {
+  top: 117px;
+  left: 103px;
+}
+
+.cajaPalabra:nth-child(4) {
+  top: 150px;
+  left: 50px;
+}
+
+.cajaPalabra:nth-child(5) {
+  top: 150px;
+  left: 150px;
+}
+
 
 .nota{
 display: flex;
