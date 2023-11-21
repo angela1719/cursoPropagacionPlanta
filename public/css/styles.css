@@ -140,7 +140,6 @@ transition: opacity 0.3s ease;
   left: 150px;
 }
 
-
 .nota{
 display: flex;
 justify-content: center;
@@ -152,4 +151,46 @@ border: 1px solid red;
 color: red;
 font-weight: bolder;
 
+}
+
+
+.drop-zone {
+  position: fixed;
+  width: 44px;
+  height: 18px;
+  border: 2px dashed #000;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  margin-right: -203px;
+  font-size: small;
+  color: #8db600;
+}
+
+/* Estilo adicional para los drop-zones */
+.drop-zone:nth-child(1) {
+  top: 40%;
+  left: 5%;
+}
+
+.drop-zone:nth-child(2) {
+  top: 233px;
+  left: 406px;
+}
+
+.drop-zone:nth-child(3) {
+  top: 124px;
+  left: 292px;
+}
+
+.drop-zone:nth-child(4) {
+  top: 113px;
+  left: 446px;
+}
+
+.drop-zone:nth-child(5) {
+  top: 207px;
+  left: 443px;
 }
