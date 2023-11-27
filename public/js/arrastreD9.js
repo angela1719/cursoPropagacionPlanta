@@ -7,20 +7,18 @@ window.addEventListener('load', () => {
 
     cajasPalabra.forEach((caja, index) => {
         let isDragging = false;
-        let offsetX, offsetY, draggedElement;
+        let draggedElement;
 
         caja.addEventListener("mousedown", function (event) {
             isDragging = true;
             draggedElement = this;
-            offsetX = event.clientX - this.getBoundingClientRect().left;
-            offsetY = event.clientY - this.getBoundingClientRect().top;
             this.style.opacity = "0.5";
         });
 
         document.addEventListener("mousemove", function (event) {
             if (isDragging && draggedElement) {
-                draggedElement.style.left = event.clientX - offsetX + "px";
-                draggedElement.style.top = event.clientY - offsetY + "px";
+                draggedElement.style.left = event.clientX - draggedElement.offsetWidth / 2 + "px";
+                draggedElement.style.top = event.clientY - draggedElement.offsetHeight / 2 + "px";
             }
         });
 
@@ -31,15 +29,18 @@ window.addEventListener('load', () => {
 
                 const dropZone = findDropZone(event.clientX, event.clientY);
 
-                if (dropZone && !dropZone.hasChildNodes()) {
+                if (dropZone && !dropZone.hasChildNodes() && isDropZoneCorrect(dropZone, draggedElement)) {
                     const palabra = draggedElement.innerText;
                     dropZone.innerText = `¡${palabra} colocada correctamente!`;
+                    alert(`¡${palabra} colocada correctamente!`);
                 } else {
-                    // La palabra no está en un drop-zone válido, resetea su posición
-                    draggedElement.style.left = "";
-                    draggedElement.style.top = "";
+                    // La palabra no está en el drop-zone correcto, muestra un mensaje de error
+                    alert("¡Intenta de nuevo!");
                 }
 
+                // Resetear la posición del elemento arrastrado
+                draggedElement.style.left = "";
+                draggedElement.style.top = "";
                 draggedElement = null;
             }
         });
@@ -58,5 +59,12 @@ window.addEventListener('load', () => {
             }
         }
         return null;
+    }
+
+    function isDropZoneCorrect(dropZone, draggedElement) {
+        const dropZoneIndex = parseInt(dropZone.dataset.target);
+        const palabraIndex = parseInt(draggedElement.dataset.index);
+
+        return dropZoneIndex === palabraIndex;
     }
 });

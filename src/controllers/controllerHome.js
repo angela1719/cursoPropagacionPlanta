@@ -35,4 +35,7 @@ module.exports = {
     diap14: (req, res) => {
         res.render('./home/diaCatorce')
     },
+    aparea: (req, res) => {
+        res.render('./home/apareamiento')
+    },
 }
