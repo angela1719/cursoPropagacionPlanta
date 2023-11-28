@@ -31,7 +31,7 @@ window.addEventListener('load', () => {
 
                 if (dropZone && !dropZone.hasChildNodes() && isDropZoneCorrect(dropZone, draggedElement)) {
                     const palabra = draggedElement.innerText;
-                    dropZone.innerText = `¡${palabra} colocada correctamente!`;
+                    // dropZone.innerText = `¡${palabra} colocada correctamente!`;
                     alert(`¡${palabra} colocada correctamente!`);
                 } else {
                     // La palabra no está en el drop-zone correcto, muestra un mensaje de error

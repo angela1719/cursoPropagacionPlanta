@@ -209,8 +209,6 @@ font-weight: bolder;
   margin-top: 20px;
 }
 
-
-
 .draggable {
   cursor: grab;
   border: 1px solid #ccc;
@@ -245,7 +243,6 @@ font-weight: bolder;
   left: 60px;
 }
 
-
 .droppable {
   border: 1px dashed #ccc;
   padding: 10px;
@@ -260,4 +257,6 @@ font-weight: bolder;
 .dragging {
   opacity: 0.5;
 }
+
+
 /* va hasta aqui */
