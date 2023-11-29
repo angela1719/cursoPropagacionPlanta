@@ -38,4 +38,7 @@ module.exports = {
     aparea: (req, res) => {
         res.render('./home/apareamiento')
     },
+    rompecabeza: (req, res) => {
+        res.render('./home/rompecabezas')
+    },
 }
