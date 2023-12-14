@@ -259,4 +259,54 @@ font-weight: bolder;
 }
 
 
-/* va hasta aqui */
+/* estilos DRAG AND DROP */
+ .rosa{
+  width: 100px;
+  height: 100px;
+  background-color: #ff0080;
+  margin-bottom: 3px;
+ }
+
+ .azul{
+  width: 100px;
+  height: 100px;
+  background-color: #1100ff;
+  margin-bottom: 3px;
+ }
+
+ .morado{
+  width: 100px;
+  height: 100px;
+  background-color: #a509a3;
+  margin-bottom: 3px;
+ }
+
+ .rosaDrop{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #ff0080;
+  background-color: #ccc;
+  margin-bottom: 3px;
+ }
+
+ .azulDrop{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #1100ff;
+  background-color: #ccc;
+  margin-bottom: 3px;
+ }
+
+ .moradoDrop{
+  width: 100px;
+  height: 100px;
+  border: 3px solid #a509a3;
+  background-color: #ccc;
+  margin-bottom: 3px;
+ }
+
+ .dragD{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }

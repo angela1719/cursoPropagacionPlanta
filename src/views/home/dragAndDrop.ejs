@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head')%>
+<body>
+    <%- include('../partials/header')%>
+    
+    <h2>DRAG AND DROP</h2>
+    <main class="dragD">
+        <div class="cajasDrag">
+            <div class="rosa" draggable="true"></div>
+            <div class="azul" draggable="true"></div>
+            <div class="morado" draggable="true"></div>
+        </div>
+
+        <div class="cajasDrop">
+            <div class="rosaDrop"></div>
+            <div class="azulDrop"></div>
+            <div class="moradoDrop"></div> 
+        </div>
+        
+        
+    </main>
+    
+    <script src="../../../js/dragAndDrop.js"></script>
+    <%- include('../partials/footer')%>
+</body>
+</html>

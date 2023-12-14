@@ -41,4 +41,7 @@ module.exports = {
     rompecabeza: (req, res) => {
         res.render('./home/rompecabezas')
     },
+    dragandDrop: (req, res) => {
+        res.render('./home/dragandDrop')
+    },
 }

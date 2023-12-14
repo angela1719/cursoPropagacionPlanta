@@ -16,5 +16,6 @@ router.get('/diaTrece', controllerHome.diap13);
 router.get('/diaCatorce', controllerHome.diap14);
 router.get('/apareamiento', controllerHome.aparea);
 router.get('/rompecabezas', controllerHome.rompecabeza);
+router.get('/dragandDrop', controllerHome.dragandDrop);
 
 module.exports = router;
