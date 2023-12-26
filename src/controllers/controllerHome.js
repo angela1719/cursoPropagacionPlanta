@@ -44,4 +44,7 @@ module.exports = {
     dragandDrop: (req, res) => {
         res.render('./home/dragandDrop')
     },
+    dragandDropS: (req, res) => {
+        res.render('./home/dragAndDropSelectivo')
+    },
 }

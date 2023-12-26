@@ -45,7 +45,7 @@ window.addEventListener('load', () => {
         console.log('Drag');
     });
 
-    // DROP
+    // DROP rosa
 
     const dropRosa = document.querySelector(".rosaDrop");
 
@@ -65,5 +65,43 @@ window.addEventListener('load', () => {
         dropRosa.appendChild(dragRosa)
     });
 
+    //  Drop Azul
+    const dropAzul = document.querySelector(".azulDrop");
+
+    dropAzul.addEventListener('dragenter' , e => {
+        console.log('Drag enter')
+    });
+
+    dropAzul.addEventListener('dragleave' , e => {
+        console.log('Drag Leave')
+    });
+    dropAzul.addEventListener('dragover' , e => {
+        e.preventDefault();
+        console.log('Drag Over')
+    });
+    dropAzul.addEventListener('drop' , e => {
+        console.log('Drop');
+        dropAzul.appendChild(dragAzul)
+    });
+
+    // Drop Morado
+
+    const dropMorado = document.querySelector(".moradoDrop");
+
+    dropMorado.addEventListener('dragenter' , e => {
+        console.log('Drag enter')
+    });
+
+    dropMorado.addEventListener('dragleave' , e => {
+        console.log('Drag Leave')
+    });
+    dropMorado.addEventListener('dragover' , e => {
+        e.preventDefault();
+        console.log('Drag Over')
+    });
+    dropMorado.addEventListener('drop' , e => {
+        console.log('Drop');
+        dropMorado.appendChild(dragMorado)
+    });
 
 })

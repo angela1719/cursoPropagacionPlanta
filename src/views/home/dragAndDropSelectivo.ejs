@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head')%>
+<body>
+    <%- include('../partials/header')%>
+    
+    <h1>ARRASTRA DONDE CORRESPONDE</h1>
+    <main>
+        <div class="container">
+            <img src="../../../images/grisly.jpg" alt="" width="130px" height="130px" draggable="true" ondragstart="drag(event)" id="Grisly">
+            <img src="../../../images/osiris.jpg" alt="" width="130px" height="130px" draggable="true" ondragstart="drag(event)" id="Osiris">
+            <img src="../../../images/onur2.png" alt="" width="130px" height="130px" draggable="true" ondragstart="drag(event)" id="Onur">
+
+            
+        </div>
+
+        <div class="container">
+            <div class="figura">
+                <div class="box" id="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2>ONUR</h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2>GRISLY</h2>
+            </div>
+            <div class="figura">
+                <div class="box" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <h2>OSIRIS</h2>
+            </div>
+        </div>
+
+        
+    </main>
+    
+    <script src="../../../js/dragAndDropS.js"></script>
+    <%- include('../partials/footer')%>
+</body>
+</html>
