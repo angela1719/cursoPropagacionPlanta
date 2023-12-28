@@ -2,12 +2,42 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+  height: 90vh;
+}
+
+.titulo {
+  color: #255000;
+  text-align: center;
+  margin: 40px 5px 5px 5px;
+}
+
+.contenido{
+  margin: 5px;
+}
+
+.imagen {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente (opcional, si lo necesitas) */
+  width: 100%;             /* Ocupa todo el ancho disponible */
+  overflow: hidden;
+  margin: 50px 5px 5px 5px;
+}
+
+.imagen img {
+    width: 90%;
+    height: auto;
+}
+
 h2 {
   font-size: 15px;
 }
 
 p {
-  font-size: 9px;
+  font-size: 22px;
+  padding: 8px;
+  text-align: justify;
 }
 
 nav {
@@ -19,11 +49,13 @@ nav {
 .botones {
   display: flex;
   justify-content: space-between;
+  height: 40px;
 }
 
 .tresBotones {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 #botonesBarNav {
@@ -35,16 +67,15 @@ nav {
   padding-top: 4px;
 }
 
-.titulo {
-  color: #255000;
-}
-
 footer {
   background: #8db600;
 }
 
 .iconosRedes {
   text-align: center;
+  height: 40px;
+  padding: 8px;
+  font-size: 22px;
 }
 
 .cuadro {
@@ -321,4 +352,26 @@ font-weight: bolder;
   width: 130px;
   height: 130px;
   border: 3px solid greenyellow;
+ }
+
+ @media (min-width: 1326px) {
+
+  .titulo{
+    font-size: 55px;
+  }
+
+  p{
+    font-size: 28px;
+  }
+
+  .imagen img{
+    width: 65%;
+  }
+  
+ }
+
+ @media (min-width: 1600px) {
+  .imagen img{
+    width: 60%;
+  }
  }
