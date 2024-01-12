@@ -354,6 +354,130 @@ font-weight: bolder;
   border: 3px solid greenyellow;
  }
 
+ /* partes de la flor */
+
+ .imagen{
+  position: relative; /* Importante para que los div se posicionen relativos a este contenedor */
+  width: 50%;        /* O ajusta al ancho que necesites */
+  margin: 0 auto;     /* Centra el contenedor en el centro de la página si lo deseas */
+ }
+
+ .imagen img{
+  width: 100%;        /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto;       /* Mantiene la proporción de la imagen */
+ }
+
+ .arrastrable{
+  width: 65px;
+  height: 20px;
+  border: 3px solid red;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: grab
+}
+
+ .ubicacion{
+  width: 70px;
+  height: 25px;
+  border: 3px solid black;
+  background-color: rgb(10, 235, 51);
+  position: absolute; /* Posiciona los divs de manera absoluta dentro del contenedor */
+  left: 30%;
+  top:67%
+  
+ }
+.ubicacion:nth-child(2) {
+  top: 43%;
+  left: 14%;
+}
+.ubicacion:nth-child(3) {
+  top: 49%;
+  left: 45%;
+}
+.ubicacion:nth-child(4) {
+  top: 30%;
+  left: 63%;
+}
+.ubicacion:nth-child(5) {
+  top: 18%;
+  left: 46%;
+}
+
+.contenedorPalabras{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* estilos flip */
+
+.flip{
+  background: #be2edd;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+}
+
+label{
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+
+}
+
+.card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: 20;
+  transition: all 600ms;
+}
+
+.card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../images/grisly.jpg');
+  background-size: cover ;
+  text-align: center;
+  line-height: 200px;
+  backface-visibility: hidden;
+
+}
+
+.card .back{
+  background: url('../images/osiris.jpg');
+  background-size: cover;
+  color: #fff;
+  transform: rotateX(180deg);
+}
+
+label:hover .card{
+  transform: rotateX(20deg);
+  box-shadow: 0 21px 21px rgba(50, 50, 50, .4);
+}
+
+input{
+  display: none;
+}
+
+#flip-checkbox:checked + label .card{
+  transform: rotateX(180deg);
+}
+
+label:hover #flip-checkbox:checked + .card{
+  transform: rotateX(160deg);
+  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.4);
+}
+
  @media (min-width: 1326px) {
 
   .titulo{
@@ -364,14 +488,14 @@ font-weight: bolder;
     font-size: 28px;
   }
 
-  .imagen img{
+  /* .imagen img{
     width: 65%;
-  }
+  } */
   
  }
 
  @media (min-width: 1600px) {
-  .imagen img{
+  /* .imagen img{
     width: 60%;
-  }
+  } */
  }

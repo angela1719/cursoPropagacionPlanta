@@ -8,8 +8,8 @@ module.exports = {
     objetivos: (req, res) => {
         res.render('./home/objetivos')
     },
-    objetivosE: (req, res) => {
-        res.render('./home/objetivosE')
+    flipCard: (req, res) => {
+        res.render('./home/flipCard')
     },
     unidad1: (req, res) => {
         res.render('./home/unidadUno')

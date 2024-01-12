@@ -6,37 +6,42 @@
     <%- include('../partials/header')%>
     
     <main>
-        <h2>IDENTIFICAR LAS ESTRUCTURAS DE LA FLOR</h2>
-        <p>La flor es el órgano sexual de las plantas. Hay muchos tipos de flores, pero todas tienen una organización parecida.</p>
-        <div class="apareamiento">
-            <div class="contenedor">
-                <div class="caja cajaPalabra" data-index="2">
-                  <p>Sépalo</p>
-                </div>
-                <div class="caja cajaPalabra" data-index="3">
-                  <p>Óvulos</p>
-                </div>
-                <div class="caja cajaPalabra" data-index="1">
-                  <p>Pétalo</p>
-                </div>
-                <div class="caja cajaPalabra" data-index="5">
-                  <p>Pistilo</p>
-                </div>
-                <div class="caja cajaPalabra" data-index="4">
-                  <p>Estambre</p>
-                </div>
-            </div>
-            <div class="drop-zone" data-target="2"></div>
-            <div class="drop-zone" data-target="3"></div>
-            <div class="drop-zone" data-target="1"></div>
-            <div class="drop-zone" data-target="5"></div>
-            <div class="drop-zone" data-target="4"></div>
-            <img src="../../../images/flor.png" alt="flor" width="200px">
-        </div>
-        <div class="nota">
-            <p>Para lograr la actividad, arrastre las palabras hasta la estructura anatómica correspondiente.</p>
-        </div>
-        <div class="error-message"></div>
+      <div>
+        <h1 class="titulo">Identifica las partes de la flor</h1>
+       </div>
+    <div class="contenido">
+        <p>En el contexto botánico, la flor se considera el órgano reproductor de las plantas. Aunque existen diversos tipos de flores, todas presentan una estructura organizativa similar.
+        </p>
+    </div>
+   <div class="imagen">
+    <img src="../../../images/partes_flor.png">
+    <div class="ubicacion" id="0" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="ubicacion" id="1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="ubicacion" id="2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="ubicacion" id="3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="ubicacion" id="4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  </div>
+  <div class="contenedorPalabras">
+    <div>
+      <p class="arrastrable" draggable="true" ondragstart="drag(event)" id="Pistilo">Pistilo</p> 
+      </div>
+      <div>
+      <p class="arrastrable" draggable="true" ondragstart="drag(event)" id="Estambre">Estambre</p> 
+      </div>
+      <div>
+      <p class="arrastrable" draggable="true" ondragstart="drag(event)" id="Petalo">Pétalo</p> 
+      </div>
+      <div>
+      <p class="arrastrable" draggable="true" ondragstart="drag(event)" id="Ovulo">Óvulo</p> 
+       </div>
+       <div>
+      <p class="arrastrable" draggable="true" ondragstart="drag(event)" id="Sepalo">Sépalo</p> 
+      </div>
+  </div>
+     
+   
+
+   
     </main>
     <script src="../../../js/arrastreD9.js"></script>
     <%- include('../partials/footer')%>
