@@ -6,7 +6,7 @@ router.get('/', controllerHome.index);
 router.get('/introduccion', controllerHome.introd);
 router.get('/objetivos', controllerHome.objetivos);
 router.get('/flipCard', controllerHome.flipCard);
-router.get('/unidadUno', controllerHome.unidad1);
+router.get('/sliders', controllerHome.slider);
 router.get('/diaOcho', controllerHome.diap8);
 router.get('/diaNueve', controllerHome.diap9);
 router.get('/diaDiez', controllerHome.diap10);

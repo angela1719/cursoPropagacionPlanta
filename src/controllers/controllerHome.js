@@ -11,8 +11,8 @@ module.exports = {
     flipCard: (req, res) => {
         res.render('./home/flipCard')
     },
-    unidad1: (req, res) => {
-        res.render('./home/unidadUno')
+    slider: (req, res) => {
+        res.render('./home/sliders')
     },
     diap8: (req, res) => {
         res.render('./home/diaOcho')

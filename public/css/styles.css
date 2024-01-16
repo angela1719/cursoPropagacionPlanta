@@ -478,6 +478,120 @@ label:hover #flip-checkbox:checked + .card{
   box-shadow: 0 20px 20px rgba(50, 50, 50, 0.4);
 }
 
+/* estilos sliders con animacion */
+
+.pCards{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.bodySliders{
+  background: url("../images/lenguajes-programacion.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #3d3d3d
+}
+
+.contenedorCards{
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #000;
+  width: 800px;
+  height: 550px;
+  position: relative;
+}
+
+.card{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 600px;
+  height: 390px;
+  top: 45px;
+  left: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+.headerSliders{
+  border-bottom: 1px solid #3d3d3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+.card h1{
+margin-bottom: 10px;
+}
+
+.card p{
+  text-align: left;
+  margin-bottom: 18px;
+}
+/* esta clase .aparecer se agregara dinamicamente */
+.aparecer{
+  position: absolute;
+  animation: .5s aparecer forwards linear;
+  animation-delay: .5s;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: scale(.7);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* esta clase .desaparecer se agregara dinamicamente */
+.desaparecer {
+  position: absolute;
+  animation: .5s desaparecer forwards linear;
+}
+
+@keyframes desaparecer {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+
+button{
+  display: inline-block;
+  width: 120px;
+  padding: 10px;
+  border: 2px solid #3d3d3d;
+  cursor:pointer;
+  transform-style: preserve-3d ;
+  box-shadow: 0 20px 20px rgba(50, 50, 50, 0.4);
+}
+
+.selected{
+  background-color: #3d3d3d;
+  color: #fff;
+
+}
+
+.navegador{
+  position: absolute;
+  bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+#c0, #c1, #c2{
+  opacity: 0;
+}
+
  @media (min-width: 1326px) {
 
   .titulo{
