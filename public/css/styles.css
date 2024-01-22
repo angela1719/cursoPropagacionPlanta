@@ -543,6 +543,7 @@ margin-bottom: 10px;
     opacity: 0;
     transform: scale(.7);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -590,6 +591,39 @@ button{
 
 #c0, #c1, #c2{
   opacity: 0;
+}
+
+/* estilos PopUp(modal) */
+
+.popUpModal{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  padding: 20px;
+  border: 2px solid #000;
+}
+
+#btnAbrirModal{
+  background-color: #000;
+  padding: 10px  15px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#btnCerrarModal{
+  background-color: #000;
+  padding: 10px  15px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#modal::backdrop{
+  background-color: rgba(219, 18, 18, 0.55);
+}
+
+#modal{
+  max-width: 50%;
 }
 
  @media (min-width: 1326px) {

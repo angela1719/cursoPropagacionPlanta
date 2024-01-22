@@ -26,8 +26,8 @@ module.exports = {
     diap11: (req, res) => {
         res.render('./home/diaOnce')
     },
-    diap12: (req, res) => {
-        res.render('./home/diaDoce')
+    popup: (req, res) => {
+        res.render('./home/popUp')
     },
     diap13: (req, res) => {
         res.render('./home/diaTrece')
